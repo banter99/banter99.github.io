@@ -1,9 +1,31 @@
---
+---
 ---
 
 //
 // IMPORTS
 //
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+table, th, td {
+border: 1px solid white;
+background-color:#984b43;
+
+}
+
+td {
+vertical-align: middle; 
+padding: 10px;
+}	
+
+th {
+color: white;
+background: #233237;
+height:50px;
+vertical-align: middle;
+}
 
 @import "reset";
 @import "variables";
@@ -18,22 +40,21 @@ html {
 }
 
 body {
-	background-image: url("https://i.pinimg.com/originals/42/2f/fd/422ffd9bff329cc21788285f48807fd8.jpg");
-  font: 18px/1.4 #ff0000;
-  color: $darkGray;
+background-image: url(https://s-media-cache-ak0.pinimg.com/originals/ba/92/74/ba9274b143b9c2f317488c9f1c5723e8.jpg);
+  font: 18px/1.7 #00ff11
+  color; #00ff11{
 }
 
-.container {
+container {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 740px;
   padding: 0 10px;
   width: 100%;
-  background-color:rgba(0,255,0,0.3);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: #ff0000;
+  color: $darkerGray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -116,6 +137,13 @@ img {
   max-width: none;
 }
 
+
+table,td {
+	border: 1px solid black;
+}
+
+
+
 .date {
   font-style: italic;
   color: $gray;
@@ -143,21 +171,14 @@ img {
     clear: both;
 }
 
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
 table {
 border-collapse: collapse;
 width: 100%;
 }
 
 table, th, td {
-border: 1px solid blue;
-background-color:purple;
+border: 1px solid white;
+background-color:#984b43;
 
 }
 
@@ -167,11 +188,21 @@ padding: 10px;
 }	
 
 th {
-color: #9900ff;
+color: yellow;
 background: #233237;
 height:50px;
 vertical-align: middle;
 }
+
+	
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+//
+// .masthead
+//
+
 .wrapper-masthead {
   margin-bottom: 50px;
 }
@@ -305,7 +336,8 @@ footer {
   text-align: center;
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+
+	// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start}
 @import "highlights";
 @import "svg-icons";
+}
