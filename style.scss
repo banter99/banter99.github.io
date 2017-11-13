@@ -4,28 +4,6 @@
 //
 // IMPORTS
 //
-table {
-border-collapse: collapse;
-width: 50%;
-}
-
-table, th, td {
-border: 1px solid white;
-background-color:#984b43;
-
-}
-
-td {
-vertical-align: middle; 
-padding: 10px;
-}	
-
-th {
-color: white;
-background: #233237;
-height:10px;
-vertical-align: middle;
-}
 
 @import "reset";
 @import "variables";
@@ -295,25 +273,56 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  padding: 2px;
+  border: #ff0000;
+  border-radius: 20px;
+  background-color: #ff0000;
+  background: rgba(255,0,0,0.4) /* Red background with 40% opacity */;	
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+  padding: 2px;
+  border: #ff0000;
+  border-radius: 20px;
+  background-color: #ff0000;
+  background: rgba(255,0,0,0.4) /* Red background with 40% opacity */;	
 }
 
-.post {
+.post, table, th, td {
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
-    color: $gray;
+    color: #ffbb00;
     font-size: 22px;
     font-style: italic;
+    border-bottom: 5px #ff0000;
+    border-top: 5px #ff0000;
+    border-left: 5px #ff0000;
+    border-right: 5px #ff0000; 
+    border: 2px solid red;
+    border-radius: 25px;
   }
 
+table, th, td {
+   border: 5px solid red;
+   padding: 25px;
+   border: #ff0000;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;	
+   border-bottom-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+   background-color: rgba(51,51,0,0.6) /* Background with 60% opacity */;
+}
+
+th {
+   text-align: left;
+}
+	
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
   .comments {
     margin-top: 10px;
   }
