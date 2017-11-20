@@ -18,22 +18,16 @@ html {
 }
 
 body {
-  font: 18px/1.7 #00ff11
-	  color; #00ffff {
-}
-
-container {
-  margin: 0 auto;
-  max-width: 500px;
-  padding: 0 10px;
-  width: 50%;
+	background-image: url(http://www.thestarwarstrilogy.com/StarWars/wallpaper/Original-Trilogy-Matte-Paintings/Original%20Trilogy%20-%20Matte%20Paintings%2006.jpg);
+  font: 18px/1.4 $helvetica;
+  color: #ffff00;
+      background-repeat: no-repeat;	  
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: #00ffff;
   font-weight: bold;
-
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
@@ -60,7 +54,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: #47b300;
 }
 
 p {
@@ -68,11 +62,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #00ffff;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: #04ffee;
   }
 }
 
@@ -114,25 +108,18 @@ img {
   max-width: none;
 }
 
-
-table,td {
-	border: 1px solid black;
-}
-
-
-
 .date {
   font-style: italic;
-  color: $gray;
+  color: #04ffe;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
+  color: #00ffff;
   background: $lightGray;
 }
 ::selection {
-  color: $black;
+  color: #00ffff;
   background: $lightGray;
 }
 
@@ -148,30 +135,6 @@ table,td {
     clear: both;
 }
 
-table {
-border-collapse: collapse;
-width: 100%;
-}
-
-table, th, td {
-border: 1px solid white;
-background-color:#984b43;
-
-}
-
-td {
-vertical-align: middle; 
-padding: 10px;
-}	
-
-th {
-color: yellow;
-background: #233237;
-height:50px;
-vertical-align: middle;
-}
-
-	
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
@@ -222,7 +185,7 @@ vertical-align: middle;
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #ffa500;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -232,7 +195,7 @@ vertical-align: middle;
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: #ffa500;
   font-size: 16px;
 
   @include mobile {
@@ -255,14 +218,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: #47b300;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: #ffbb00;
     }
   }
 }
@@ -292,7 +255,7 @@ nav {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
-    color: #00ffff;
+    color: #ffbb00;
     font-size: 22px;
     font-style: italic;
     border-bottom: 5px #ff0000;
@@ -312,6 +275,13 @@ table, th, td {
    border-bottom-right-radius: 25px;
    border-bottom-left-radius: 25px;
    background-color: rgba(51,51,0,0.6) /* Background with 60% opacity */;
+   div {
+    background-color: #8b0000;
+}
+
+p {
+    background-color: #00008b;
+}
 }
 
 th {
@@ -322,6 +292,7 @@ td {
     height: 50px;
     vertical-align: bottom;
 }
+	
   .comments {
     margin-top: 10px;
   }
@@ -344,8 +315,7 @@ footer {
   text-align: center;
 }
 
-
-	// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start}
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
-}
