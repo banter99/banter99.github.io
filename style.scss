@@ -20,8 +20,8 @@ html {
 body {
 	background-image: url("http://mojmalnews.com/wp-content/uploads/2017/08/lamborghini-sports-car-images-12-lamborghini-veneno-wallpaper-hd-2013-sports-car-background.jpg");
 	background-attachment: fixed;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  font: 18px/1.7 #00ff11;
+  color: #00ff11;
 }
 
 .container {
@@ -29,6 +29,7 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+background: rgba(255, 255, 255, 0.5)
 }
 
 h1, h2, h3, h4, h5, h6 {
